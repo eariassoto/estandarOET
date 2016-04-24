@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--
+	<title>@ViewBag.Title - Control de activos</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+	-->
+
+<title>Diseño estándar</title>
+<link rel="stylesheet" type="text/css" href="Content/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="Content/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="Content/site.css">
+</head>
+<body>
+<div class="barra-logo">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="pull-left"> <img src="Content/Images/logo_oet.png" alt="Logo OET" class="img-responsive logo-oet" /> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="navbar navbar-default navbar-fixed-top" style="margin-top:80px;">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Activos</a></li>
+        <li class="active"><a href="#">Ejemplo campo</a></li>
+        <!--
+					<li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Activos", "Index", "Activos")</li>
+					-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class=""><a href="#">Iniciar sesión</a></li>
+      </ul>
+      
+      <!--
+                @Html.Partial("_LoginPartial")
+				--> 
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Título explicativo</h1>
+    <p>En este contenedor se puede detallar un poco más sobre la funcionalidad de la pantalla.</p>
+  </div>
+  <div class="page-header">
+    <h1>Botones con texto</h1>
+  </div>
+  <p>
+    <button type="button" class="btn btn-lg btn-default">Default</button>
+    <button type="button" class="btn btn-lg btn-primary">Primary</button>
+    <button type="button" class="btn btn-lg btn-success">Success</button>
+    <button type="button" class="btn btn-lg btn-info">Info</button>
+    <button type="button" class="btn btn-lg btn-warning">Warning</button>
+    <button type="button" class="btn btn-lg btn-danger">Danger</button>
+    <button type="button" class="btn btn-lg btn-link">Link</button>
+  </p>
+  <hr/>
+  <div class="page-header">
+    <h1>Botones con íconos</h1>
+    <p>Se utiliza <a href="https://fortawesome.github.io/Font-Awesome/icons/">Font Awesome</a> pra cargar los iconos. Más doc en el link</p>
+    <p><a href="http://jameschambers.com/2014/08/adding-some-font-awesome-to-mvc-and-bootstrap/">Tutorial para agregar Font Awesome a ASP.NET</a></p>
+  </div>
+  <p>
+    <button type="button" class="btn btn-lg btn-primary"> <i class="fa fa-plus" aria-hidden="true"></i><span class="sr-only">Crear</span></button>
+    <button type="button" class="btn btn-lg btn-primary"> <i class="fa fa-pencil" aria-hidden="true"></i> <span class="sr-only">Modificar</span> </button>
+    <button type="button" class="btn btn-lg btn-danger"> <i class="fa fa-trash-o" aria-hidden="true"></i> <span class="sr-only">Eliminar</span> </button>
+  </p>
+  <hr/>
+  <div class="page-header">
+  <h1>Tablas</h1>
+  </div>
+  <table class="table table-bordered table-hover table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="footer">
+  <div class="cuerpo-footer">
+    <div class="container">
+      <footer>
+        <div class="row">
+          <div class="col-xs-12">
+            <h6 class="text-center"><a href="#">Contáctenos</a> | OET &copy; Copyright @DateTime.Now.Year - Todos los derechos reservados. </h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h6 class="text-center"> Por favor reporte cualquier problema o solicite asistencia a <a href="mailto:contacts.admin@oet.ac.cr">contacts.admin@oet.ac.cr</a></h6>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+<!--
+	@Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+	-->
+</body>
+</html>
